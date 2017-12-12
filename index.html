@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!--JS Addons -->
+    <!-- jQuery -->
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--   moment -->
+    <script 
+    src="https://cdn.jsdelivr.net/npm/moment@2.19.3/moment.js"></script>
+    <!-- Firebase Reference -->
+    <script 
+    src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+  <!--CSS links -->
+    <!-- bootstrap -->
+    <link 
+    rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" 
+    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" 
+    crossorigin="anonymous">
+    <!-- css  -->
+    <link 
+    rel="stylesheet" 
+    type="text/css" 
+    href="assets/css/trainstyles.css">
+  
+<title>Train Schedule</title>
+</head>
+
+<body>
+<div class="container">
+<!-- Title in Jumbotron -->
+  <div class="jumbotron" id="top">
+    <div class="container" id="banner">
+      <h1 class="display-3">Train Schedule App</h1>
+      <p class="lead">Add and Watch Trains Here</p>
+    </div>
+  </div>
+<!-- Train Schedule Table -->
+  <div class="wrapper">
+    <div class="container">
+      <div class="card">
+        <div class="card-header" id="cardTitle">
+          Trains Scheduled
+        </div>
+        <div class="card-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Train Name</th>
+                <th scope="col">Destination</th>
+                <th scope="col">First Departure (24:00)</th>
+                <th scope="col">Run Frequency</th>
+                <th scope="col">Next Departure (24:00)</th>
+                <th scope="col">Minutes Away</th>
+              </tr>
+            </thead>
+            <tbody id="dataWrapper">
+              
+            </tbody>
+          </table>
+        </div>  
+      </div>
+    </div>
+  </div>
+<!-- Train adding form -->
+  <div class="container" id="addTrain">
+    <div class="card">
+      <div class="card-header" id="cardTitle">
+        ADD TRAIN
+      </div>
+      <div class="card-body">
+        <div class="form-group">
+          <label for="trainName">Train Name</label>
+          <input type="text" class="form-control" id="trainName">
+        </div>
+        <div class="form-group">
+          <label for="destination">Destination</label>
+          <input type="text" class="form-control" id="destination">
+        </div>
+        <div class="form-group">
+          <label for="firstTrain">First Departure (24:00)</label>
+          <input type="time" class="form-control" id="firstTrain">
+        </div>
+        <div class="form-group">
+          <label for="runFrequency">Run Frequency</label>
+          <input type="number" class="form-control" id="runFrequency">
+        </div>
+        
+        <button id="submitButton" class="btn btn-primary">Submit</button>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+  <!--link to my java script -->
+   <script 
+   type="text/javascript" src="assets/javascript/trainjs.js"></script> 
+
+  </body>
+</html>
