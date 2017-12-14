@@ -1,0 +1,17 @@
+body {
+	background-image: url('../images/trains2.jpg');
+	font-family: 'Krona One', sans-serif;
+	font-variant: small-caps;
+}
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: red;
+ }
+.table-striped>tbody>tr:nth-child(even)>td, 
+.table-striped>tbody>tr:nth-child(even)>th {
+   background-color: green;
+ }
+ .table-hover tbody tr:hover td {
+    color: #fff;
+    background-color: #000;
+}
